@@ -60,11 +60,11 @@ christmasNew.date.setHours(00,00)
 christmasNew.name = 'X-mas Day'
 
 
-copied = holidays.christmasNew
+copied = holidays[6].christmasNew
 copied = { name: 'X-mas Day' }
 correctDate = copied.date
-correctDate.Hours = 0
-correctDate.minutes = 0
+correctDate.hours = 00
+correctDate.minutes = 00
 isEarlier = copied.date < holidays[6].date
 console.log('New date is earlier:', isEarlier)
 if (isEarlier) copied.date = correctDate
@@ -101,8 +101,8 @@ const firstMonth = firstHolidayTimestamp.getMonth
 const lastDay = lastHolidayTimestamp.getDate
 const lastMonth = lastHolidayTimestamp.getMonth
 
-console.log('{firstDay}/{firstMonth}/{currentYear}')
-console.log('{lastDay}/{lastMonth}/{currentYear}')
+console.log(`'${firstDay}/${firstMonth}/${currentYear}'`)
+console.log(`'${lastDay}/${lastMonth}/${currentYear}'`)
 
 const randomHoliday = holidays[Math.random]
 console.log(randomHoliday.date)
